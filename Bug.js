@@ -1,0 +1,1 @@
+This code suffers from a race condition.  The `setState` call in `handleClick` is asynchronous.  If the user clicks rapidly, multiple `setState` calls might be queued, and only the last one will be reflected in the UI.  This leads to unpredictable behavior and lost updates.
