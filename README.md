@@ -1,0 +1,1 @@
+This repository demonstrates a common React race condition related to asynchronous `setState` calls.  The `Bug.js` file shows the problematic code, where rapid clicks cause lost updates. The `BugSolution.js` file provides a solution using functional updates to ensure that each update correctly reflects the change.
